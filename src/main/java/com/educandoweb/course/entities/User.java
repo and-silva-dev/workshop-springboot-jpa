@@ -10,7 +10,7 @@ import jakarta.persistence.Table;
 import jakarta.persistence.Id;
 
 @Entity
-@Table(name = "tb_user")
+@Table(name = "tb_user") // Essa notação foi dada para não gerar conflito pois o banco de dados H2 tem a palavra User como reservada e a classe em Java tem o nome User . 
 public class User implements Serializable {
 
 	/**
