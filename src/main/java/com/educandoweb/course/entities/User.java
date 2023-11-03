@@ -1,13 +1,16 @@
 package com.educandoweb.course.entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import jakarta.persistence.Table;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "tb_user") // Essa notação foi dada para não gerar conflito pois o banco de dados H2 tem a palavra User como reservada e a classe em Java tem o nome User . 
@@ -24,7 +27,8 @@ public class User implements Serializable {
 	private String email;
 	private String phone;
 	private String password;
-
+	@OneToMany(mappedBy = "client")
+	private List<Order> orders = new ArrayList<>(); 
 	// Construtores
 	public User() {
 
@@ -40,6 +44,11 @@ public class User implements Serializable {
 	}
 
 	// Métodos get e set
+	
+	public List<Order> getOrders() {
+		return orders;
+	}
+	
 	public Long getId() {
 		return id;
 	}
@@ -96,6 +105,8 @@ public class User implements Serializable {
 		User other = (User) obj;
 		return Objects.equals(id, other.id);
 	}
+
+	
 
 	
 	
