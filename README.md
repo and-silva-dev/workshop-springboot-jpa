@@ -1,17 +1,5 @@
 # workshop-springboot-jpa
-## Anderson Silva
-Técnico em Eletrônica entusiasta de tecnologias . Atualmente cursando Análise e Desenvolvimento de Sistemas e em uma longa jornada de estudos back-end .
-<div style="display: block;">
-  <div>
-    <img width="30" height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
-  </div>
-  <a href="https://www.linkedin.com/in/anderson-l-1136a414b/" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
-    https://www.linkedin.com/in/anderson-l-1136a414b/
-  </a>
-</div>
 
-
-   
 
 ## Sobre o projeto
 
